@@ -1,6 +1,4 @@
 main:
-  - title: "Posts"
-    url: /posts/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
@@ -9,14 +7,14 @@ main:
     url: /about/
 
 docs: 
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
-
+  - title: "Chapter 1. Preparation to work"
+    children:
+    - title: "1. Installation of R/RStudio"
+      url: /docs/Part1_1/
+    - title: "2. Presentation of R/RStudio"
+      url: /docs/Part1_2
+      
+  - title: "Chapter 2. Let's get the data"
+    
 sidebar: 
   nav: "docs"
