@@ -1,6 +1,6 @@
 ---
 permalink: /instrucor/
-title: "About"
+title: "Instructor"
 layout: single
 ---
 
