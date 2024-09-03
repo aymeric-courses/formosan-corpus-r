@@ -1,8 +1,8 @@
 ---
-permalink: /about/
+permalink: /instrucor/
 title: "About"
 layout: single
 ---
 
-Name: Aymeric Collart
-Website: https://aymeric-collart.github.io/
+<p>Name: Aymeric Collart</p>
+<p>Website: https://aymeric-collart.github.io/</p>
