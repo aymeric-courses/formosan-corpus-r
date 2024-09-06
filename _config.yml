@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Formosan languages, Corpus and R
+title: Formosan languages
+subtitle: Corpus and R/RStudio
 email: aymeric.collart@gmail.com
 description: This is the website for the tutorial on "Formosan languages, corpus and R/RStudio"
 twitter_username: username
@@ -61,27 +62,15 @@ plugins:
 
 author:
   name   : "Aymeric Collart"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/bio-AymericCollart.jpg"
+  bio    : "Please click on the links below to know more about the instructor"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://aymeric-collart.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-footer:
-  links:
-    - label: "Instructor"
-      icon: "fab fa-fw fa-github"
-      url: "https://aymeric-collart.github.io/"
+      url: "https://x.com/AymericCollart"
 
 defaults:
   # _posts
