@@ -16,3 +16,6 @@ pages:
     children:
       - title: "Configuration"
         url: /about/
+        
+sidebar:
+  nav: "pages"
