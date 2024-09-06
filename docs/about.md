@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /docs/about/
 title: "About"
 layout: single
 ---

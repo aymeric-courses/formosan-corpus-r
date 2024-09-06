@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-permalink: /introduction/
+permalink: /docs/introduction/
 toc: true
 ---
 

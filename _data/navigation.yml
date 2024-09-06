@@ -1,23 +1,23 @@
 # main links
 main:
   - title: "Get into the tutorial"
-    url: /introduction/
+    url: /docs/introduction/
   - title: "Instructor"
-    url: /instructor/
+    url: /docs/instructor/
     
-pages:
+docs:
   - title: Getting Started
     children:
       - title: "Get into the tutorial"
-        url: /introduction/
+        url: /docs/introduction/
       - title: "First section"
-        url: /about/
+        url: /docs/about/
       - title: "Second section"
-        url: /instructor/
+        url: /docs/instructor/
   - title: Presentation
     children:
       - title: "Configuration"
-        url: /about/
+        url: /docs/about/
         
 sidebar:
-  nav: "pages"
+  nav: "docs"
