@@ -11,7 +11,7 @@ docs:
       - title: "Introduction: Get into the tutorial"
         url: /docs/introduction/
       - title: "1.1 Installation of R/RStudio"
-        url: /docs/about/
+        url: /docs/InstallationR/
       - title: "1.2 Introduction to the interface of RStudio"
         url: /docs/instructor/
       - title: "1.3 Working with Markdown files"
