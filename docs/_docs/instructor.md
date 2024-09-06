@@ -1,5 +1,5 @@
 ---
-permalink: /instrucor/
+permalink: /docs/instructor/
 title: "Instructor"
 layout: single
 ---
