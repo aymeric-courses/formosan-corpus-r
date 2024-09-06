@@ -8,6 +8,8 @@ main:
 pages:
   - title: Getting Started
     children:
+      - title: "Get into the tutorial"
+        url: /introduction/
       - title: "First section"
         url: /about/
       - title: "Second section"
