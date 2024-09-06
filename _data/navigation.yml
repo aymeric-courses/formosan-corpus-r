@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: /docs/instructor/
+  - title: "Get into the tutorial"
+    url: /introduction/
   - title: "Instructor"
     url: /instructor/
     
