@@ -14,7 +14,7 @@ sidebar:
 
 | R    | RStudio |
 | -------- | ------- |
-| Logo R | Logo RStudio |
+| <img src="aymeric-courses.github.io/formosan-corpus-r/assets/images/R_logo.png" alt=""> | <img src="aymeric-courses.github.io/formosan-corpus-r/assets/images/RStudio_logo.png" alt=""> |
 
 <p>The main program is called R. This is where all the magic happens. RStudio is a user-friendly interface such that it is easier to work with.</p>
 <p>Maybe a metaphor can help to understand the difference between R and RStudio. As you are engaging yourself in this tutorial, I assume that you have a computer (and that you are using one). You can create folders, open Word or Excel documents, write in it and save them in the folders you created.</p>
@@ -25,7 +25,6 @@ sidebar:
 
 <p class="notice--info"><strong>Anecdote</strong><br>Let me share a personal anecdote when I just entered graduate school and I had my very first class of language programming for linguistic research. Just before leaving, the instructor said very quickly that we had to, I quote, "download the R program for next time".
 I had never heard of R, and to me, calling a program with only one letter seemed kind of awkward. Therefore, I assumed that I misheard the instructions, or that I missed some information. You can just imagine how surprised I was when I googled R and actually found that this existed!<br></p>
-Anecdote
 
 
 ## 2. Download and install R and RStudio
