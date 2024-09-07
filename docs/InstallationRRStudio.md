@@ -23,9 +23,10 @@ sidebar:
 
 <p>This is the exact same thing with R and RStudio. R will perform the computations that you ask for. And you will ask R to do stuff by clicking on icons and writing commands using the user-friendly interface of RStudio. And this is why you need to download two programs!</p>
 
+<p class="notice--info"><strong>Anecdote</strong><br>Let me share a personal anecdote when I just entered graduate school and I had my very first class of language programming for linguistic research. Just before leaving, the instructor said very quickly that we had to, I quote, "download the R program for next time".
+I had never heard of R, and to me, calling a program with only one letter seemed kind of awkward. Therefore, I assumed that I misheard the instructions, or that I missed some information. You can just imagine how surprised I was when I googled R and actually found that this existed!<br></p>
 Anecdote
-Let me share a personal anecdote when I just entered graduate school and I had my very first class of language programming for linguistic research. Just before leaving, the instructor said very quickly that we had to, I quote, "download the R program for next time".
-I had never heard of R, and to me, calling a program with only one letter seemed kind of awkward. Therefore, I assumed that I misheard the instructions, or that I missed some information. You can just imagine how surprised I was when I googled R and actually found that this existed!
+
 
 ## 2. Download and install R and RStudio
 ### 2.1 Download and install R
