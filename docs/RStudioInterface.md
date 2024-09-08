@@ -7,7 +7,16 @@ sidebar:
   nav: docs
 ---
 
-## 1.	What is R? What is RStudio?
+Now I assume that R and RStudio are correctly installed on your computer. You can start by opening RStudio. You will see a lot of things on your screen, many blocks, many menus, and it can be quite overwhelming. No worries! This is exactly what this section is about!
 
-<p>So far, we have been talking about something called "R/RStudio". People familiar with this program know what this is about. However, it can be quite confusing when we have never heard of it.</p>
-<p>We are actually referring to two programs:</p>
+<p class="notice--info"><strong>objectives</strong><br>In this section, you will learn more about the RStudio interface and get familiarized with it.<br>
+This section is not only about presenting the interface. In addition to that, you will also get familiar with the very basics of R language.<br></p>
+ 
+## 1. The interface of RStudio
+### 1.1	General overview of the interface: Blocks, blocks, blocks and blocks
+### 1.2	The computer block
+### 1.3	The variable block
+### 1.4	The code block
+### 1.5	The script block
+## 2. Some basic elements of R language
+
