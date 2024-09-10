@@ -14,7 +14,7 @@ sidebar:
 
 | R    | RStudio |
 | -------- | ------- |
-| <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/R_logo.png" alt=""> | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_Logo.png" alt=""> |
+| <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/R_logo.png" alt="" width="50" height="50" > | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_Logo.png" alt=""> |
 
 <img src="/blob/master/assets/images/RStudio_Logo.png" alt="test new logi">
 
