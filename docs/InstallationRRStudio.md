@@ -16,7 +16,7 @@ sidebar:
 | -------- | ------- |
 | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/R_logo.png" alt=""> | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_Logo.png" alt=""> |
 
-<img src="assets/images/RStudio_Logo.png" alt="test new logi">
+<img src="/blob/master/assets/images/RStudio_Logo.png" alt="test new logi">
 
 test new image
 
