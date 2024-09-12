@@ -26,6 +26,13 @@ Test image 1
 
 Test image 22
 
+Another test
+<figure class="half">
+	<a href="http://placehold.it/1200x600.JPG"><img src="http://placehold.it/600x300.jpg" /></a>
+	<a href="http://placehold.it/1200x600.jpeg"><img src="http://placehold.it/600x300.jpg" /></a>
+	<figcaption>Two images.</figcaption>
+</figure>
+
 
 The best way to apprehend RStudio is to understand the interface as <b>blocks</b>, which are here for different purposes.
 
