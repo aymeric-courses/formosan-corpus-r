@@ -17,6 +17,7 @@ But this section is not only about presenting the interface! In addition to that
 You may see the following picture on your screen after opening RStudio:
 
 (Image of first-time RStudio to add later)
+<img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_Logo.png" alt="">
 
 The best way to apprehend RStudio is to understand the interface as <b>blocks</b>, which are here for different purposes.
 
