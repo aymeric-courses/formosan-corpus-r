@@ -38,7 +38,10 @@ Test image 1
 Test image 22
 
 Another test
-<img src="./../assets/images/R_logo.png" align="left" width="150" height="150" style="padding-right: 10px"/>
+![alt text](https://github.com/aymeric-courses/formosan-corpus-r/blob/master/docs/R_logo.png?raw=true)
+
+Test 2
+![alt text](https://github.com/aymeric-courses/formosan-corpus-r/blob/master/docs/R_logo.png)
 
 The best way to apprehend RStudio is to understand the interface as
 <b>blocks</b>, which are here for different purposes.
