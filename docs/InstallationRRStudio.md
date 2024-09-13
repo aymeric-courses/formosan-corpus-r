@@ -20,7 +20,7 @@ sidebar:
 <p>The main program is called R. This is where all the magic happens. RStudio is a user-friendly interface such that it is easier to work with.</p>
 <p>Maybe a metaphor can help to understand the difference between R and RStudio. As you are engaging yourself in this tutorial, I assume that you have a computer (and that you are using one). You can create folders, open Word or Excel documents, write in it and save them in the folders you created.</p>
 
-<p class="notice"><p style="text-align: center">&nbsp; &#129504; &nbsp;</p>
+<p class="notice">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#129504; 
 <br>Now it is time to reflect on what you are doing. You have done these tasks by using your mouse or your touchpad and clicking on icons (or figures) on your screen. What you may not know is that when doing so, you have run many lines of codes. Actually, it is your computer that ran them in programs able to perform computations. Your role has been to trigger these programs by using the user-friendly interface installed in your computer.</p>
 
 <p>This is the exact same thing with R and RStudio. R will perform the computations that you ask for. And you will ask R to do stuff by clicking on icons and writing commands using the user-friendly interface of RStudio. And this is why you need to download two programs!</p>
