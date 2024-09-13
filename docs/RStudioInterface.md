@@ -1,7 +1,7 @@
 ---
 title: "Section 1.2 Introduction to the interface of RStudio and R language"
 permalink: /docs/RStudioInterface/
-layout: single
+layout: blog
 toc: true
 sidebar:
   nav: docs
