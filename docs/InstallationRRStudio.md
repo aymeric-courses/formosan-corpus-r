@@ -15,8 +15,10 @@ sidebar:
 | <center>R</center>    |
 | -------- |
 | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/R_logo.png?raw=true" width="270" > | 
+
 <br>
-| <centet>RStudio</center> |
+
+| <center>RStudio</center> |
 |------- |
 | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_Logo.png?raw=true"> |
 
