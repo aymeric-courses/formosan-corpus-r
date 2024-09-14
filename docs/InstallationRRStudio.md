@@ -38,14 +38,14 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 ## 2. Download and install R and RStudio
 ### 2.1 Download and install R
 #### 2.1.1 Procedures to download R
-<p>You can download R for free from the official website here: <a href="https://www.r-project.org/" target="_blank" class="btn btn--primary">here</a>
+<p>You can download R for free from the official website <a href="https://www.r-project.org/" target="_blank" class="btn btn--primary">here</a>
 </p>
 
 <p>You have to look for the link in the middle of the first paragraph on the front page.</p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
 
-<p>Then, you need to choose your CRAN. Let's choose the one in Taiwan.</p>
+<p>Then, you need to choose your CRAN. Let's choose the one in Taiwan. You will need to scroll down the page to find the link.</p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" class="full"></a>
 
@@ -57,4 +57,12 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 
 ### 2.2 Download and install RStudio
 #### 2.2.1 Procedures to download RStudio
+
+<p>Now that R is installed on your computer, it is time to do the same with RStudio. First, let's go to the RStudio website by clicking <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="btn btn--primary">here</a>, and you'll see something like that:
+</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" class="full"></a>
+
 #### 2.2.2 Procedures to install RStudio
+
+### 2.3 Launch and try!
