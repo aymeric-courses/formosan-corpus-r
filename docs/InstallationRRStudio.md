@@ -58,10 +58,14 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 ### 2.2 Download and install RStudio
 #### 2.2.1 Procedures to download RStudio
 
-<p>Now that R is installed on your computer, it is time to do the same with RStudio. First, let's go to the RStudio website by clicking <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="btn btn--primary">here</a>, and you'll see something like that:
+<p>Now that R is installed on your computer, it is time to do the same with RStudio. First, let's go to the RStudio website by clicking <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="btn btn--primary">here</a>^, and you'll see something like that (if not, it's just that the RStudio website has changed):
 </p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" class="full"></a>
+
+<p>Once you're on the front page, just scroll down to look for the links to download the installing files. Again, you'll need to choose the right file to download according to the system of your computer: Window, macOS (for the most common), or another one.</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" class="full"></a>
 
 #### 2.2.2 Procedures to install RStudio
 
