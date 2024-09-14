@@ -42,13 +42,18 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 <p>You have to look for the link in the middle of the first paragraph on the front page.</p>
 
 <center>
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
 </center>
 
 <p>Then, you need to choose your CRAN. Let's choose the one in Taiwan.</p>
 
-<center>
-<img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" ></center>
+<IMG id="myImage" src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" >
+<style type="text/css">
+    #myImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
+</style>
 
 <p>Now you need to choose the files to download according to the system of your computer. The likeliest to use are for MacOS (if you have a MacBook computer) or for Windows (if your system is Microsoft).</p>
 
