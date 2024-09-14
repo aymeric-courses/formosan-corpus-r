@@ -44,23 +44,23 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 
 <p>You have to look for the link in the middle of the first paragraph on the front page.</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
 
 <p>Then, you need to choose your CRAN. Let's choose the one in Taiwan. You will need to scroll down the page to find the link.</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" class="full"></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" class="full"></a>
 
 <p>Now you need to choose the files to download according to the system of your computer. The likeliest to use are for MacOS (if you have a MacBook computer) or for Windows (if your system is Microsoft).</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" class="full"></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" class="full"></a>
 
 <p>On the next page, you'll need to choose the subdirectory that you need. For our purposes, we'll only need the "base" subdirectory.</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" class="full"></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" class="full"></a>
 
 <p>We finally got to the last page! Just click on the first link to download the files, as in the image below.</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" class="full"></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" class="full"></a>
 
 <p>Just wait until the file is download, open it and follow the instructions to install R on your computer.</p>
 
@@ -69,15 +69,15 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 <p>Now that R is installed on your computer, it is time to do the same with RStudio. First, let's go to the RStudio website by clicking <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="btn btn--primary">here</a> , and you'll see something like that (if not, it's just that the RStudio website has changed):
 </p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" class="full"></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" class="full"></a>
 
 <p>Once you're on the front page, just scroll down to look for the links to download the installing files. Again, you'll need to choose the right file to download according to the system of your computer: Window, macOS (for the most common), or another one.</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" class="full"></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" class="full"></a>
 
 <p>Just click on the link and the file will start to be downloaded! Again, give it some minutes, then open the file and follow the instructions to install RStudio on your computer.</p>
 
-### 2.3 Launch and try!
+## 3 Launch and try!
 
 <p>Look for the program called "RStudio" on your computer. Maybe you even have a shortcut on your desktop after installing it. Once you found it, just open RStudio, and you can go to the next section!</p>
 
