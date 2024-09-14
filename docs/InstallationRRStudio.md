@@ -12,14 +12,14 @@ sidebar:
 <p>So far, we have been talking about something called "R/RStudio". People familiar with this program know what this is about. However, it can be quite confusing when we have never heard of it.</p>
 <p>We are actually referring to two programs:</p>
 
-| R    |
+| <center>R</center>    |
 | -------- |
 | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/R_logo.png?raw=true" width="270" > | 
-| RStudio |
+<br>
+| <centet>RStudio</center> |
 |------- |
 | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_Logo.png?raw=true"> |
 
-Changes
 
 <p>The main program is called R. This is where all the magic happens. RStudio is a user-friendly interface such that it is easier to work with.</p>
 <p>Maybe a metaphor can help to understand the difference between R and RStudio. As you are engaging yourself in this tutorial, I assume that you have a computer (and that you are using one). You can create folders, open Word or Excel documents, write in it and save them in the folders you created.</p>
