@@ -58,7 +58,7 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" class="full"></a>
 
-<p>We finally got to the last page! Just click on the first link to download the files, as in the image below.
+<p>We finally got to the last page! Just click on the first link to download the files, as in the image below.</p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" class="full"></a>
 
