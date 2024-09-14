@@ -11,11 +11,11 @@ sidebar:
 
 <p>So far, we have been talking about something called "R/RStudio". People familiar with this program know what this is about. However, it can be quite confusing when we have never heard of it.</p>
 <p>We are actually referring to two programs:</p>
-<center>
+
 | <center>R</center>    |
 | -------- |
 | <img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/R_logo.png?raw=true" width="270" > | 
-</center>
+
 <br>
 
 | <center>RStudio</center> |
@@ -38,14 +38,17 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 ## 2. Download and install R and RStudio
 ### 2.1 Download and install R
 #### 2.1.1 Procedures to download R
-<p>You can download R for free from the official website here: <a href="https://www.r-project.org/" class="btn--info" target="_blank">Click to go to the R website</a></p>
+<p>You can download R for free from the official website here: <p class="notice--info">Click <a href="https://www.r-project.org/" target="_blank">here</a> to go to the R website</p></p>
 <p>You have to look for the link in the middle of the first paragraph on the front page.</p>
 
-<img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" >
+<center>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
+</center>
 
 <p>Then, you need to choose your CRAN. Let's choose the one in Taiwan.</p>
 
-<img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" >
+<center>
+<img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" ></center>
 
 <p>Now you need to choose the files to download according to the system of your computer. The likeliest to use are for MacOS (if you have a MacBook computer) or for Windows (if your system is Microsoft).</p>
 
