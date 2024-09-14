@@ -38,7 +38,7 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 
 ## 2. Download and install R and RStudio
 ### 2.1 Download and install R
-#### 2.1.1 Procedures to download R
+
 <p>You can download R for free from the official website <a href="https://www.r-project.org/" target="_blank" class="btn btn--primary">here</a>
 </p>
 
