@@ -38,26 +38,20 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 ## 2. Download and install R and RStudio
 ### 2.1 Download and install R
 #### 2.1.1 Procedures to download R
-<p>You can download R for free from the official website here: <p class="notice--info">Click <a href="https://www.r-project.org/" target="_blank">here</a> to go to the R website</p></p>
+<p>You can download R for free from the official website here: <a href="https://www.r-project.org/" target="_blank" class="btn btn--primary">here</a>
+</p>
+
 <p>You have to look for the link in the middle of the first paragraph on the front page.</p>
 
-<center>
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_FrontPage.png?raw=true" ></a>
-</center>
 
 <p>Then, you need to choose your CRAN. Let's choose the one in Taiwan.</p>
 
-<IMG id="myImage" src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" >
-<style type="text/css">
-    #myImage {
-        display: block;
-        margin-left: auto;
-        margin-right: auto }
-</style>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_CRAN.png?raw=true" class="full"></a>
 
 <p>Now you need to choose the files to download according to the system of your computer. The likeliest to use are for MacOS (if you have a MacBook computer) or for Windows (if your system is Microsoft).</p>
 
-<img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" >
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" class="full"></a>
 
 #### 2.1.2 Procedures to install R
 
