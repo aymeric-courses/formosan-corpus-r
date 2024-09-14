@@ -3,6 +3,7 @@ title: "Section 1.1 Installation of R/RStudio"
 permalink: /docs/InstallationR/
 layout: single
 toc: true
+toc_sticky: true
 sidebar:
   nav: docs
 ---
@@ -53,12 +54,19 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_Download.png?raw=true" class="full"></a>
 
-#### 2.1.2 Procedures to install R
+<p>On the next page, you'll need to choose the subdirectory that you need. For our purposes, we'll only need the "base" subdirectory.</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadSubdirectory.png?raw=true" class="full"></a>
+
+<p>We finally got to the last page! Just click on the first link to download the files, as in the image below.
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RWebsite_DownloadFinal.png?raw=true" class="full"></a>
+
+<p>Just wait until the file is download, open it and follow the instructions to install R on your computer.</p>
 
 ### 2.2 Download and install RStudio
-#### 2.2.1 Procedures to download RStudio
 
-<p>Now that R is installed on your computer, it is time to do the same with RStudio. First, let's go to the RStudio website by clicking <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="btn btn--primary">here</a>^, and you'll see something like that (if not, it's just that the RStudio website has changed):
+<p>Now that R is installed on your computer, it is time to do the same with RStudio. First, let's go to the RStudio website by clicking <a href="https://posit.co/download/rstudio-desktop/" target="_blank" class="btn btn--primary">here</a> , and you'll see something like that (if not, it's just that the RStudio website has changed):
 </p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_FrontPage.png?raw=true" class="full"></a>
@@ -67,6 +75,11 @@ I had never heard of R, and to me, calling a program with only one letter seemed
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudioWebsite_Download.png?raw=true" class="full"></a>
 
-#### 2.2.2 Procedures to install RStudio
+<p>Just click on the link and the file will start to be downloaded! Again, give it some minutes, then open the file and follow the instructions to install RStudio on your computer.</p>
 
 ### 2.3 Launch and try!
+
+<p>Look for the program called "RStudio" on your computer. Maybe you even have a shortcut on your desktop after installing it. Once you found it, just open RStudio, and you can go to the next section!</p>
+
+<p class="notice"><strong> &#129504; Think about it </strong>
+<br>Recall that R is the program where the computations are done, and RStudio the user-friendly interface. You may ask why I only said to open the RStudio program when it's only an interface. The good news is, even if we <i>need</i> to download both R and RStudio, you actually only need to open RStudio when you want to use R!</p>
