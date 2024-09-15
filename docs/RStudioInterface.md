@@ -3,6 +3,7 @@ title: "Section 1.2 Introduction to the interface of RStudio and R language"
 permalink: /docs/RStudioInterface/
 layout: single
 toc: true
+toc_sticky: true
 sidebar:
   nav: docs
 ---
@@ -103,10 +104,26 @@ just depends on what your preferences are. So, really, make it your own!
 
 </p>
 
-## 2. Some basic elements of R language
+## 2. Libraries
 
-### 2.1 First things first: The 'working directory'
+### 2.1 What is the concept of the "libraries"?
 
-### 2.2 Your first script: Some syntax and vocabulary of R
+### 2.2 How to install and use libraries?
 
-### 2.3 Common mistakes, or how to save a lot of time
+## 3. Some basic elements of R language
+
+### 3.1 First things first: The 'working directory'
+
+### 3.2 Your first script: Some syntax and vocabulary of R
+
+#### Basic calculations
+
+#### Assigning variables
+
+#### Data description and summary
+
+#### Transforming the data: add, delete, change
+
+#### Plotting the data
+
+### 3.3 Common mistakes, or how to save a lot of time
