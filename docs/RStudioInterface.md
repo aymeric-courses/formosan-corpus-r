@@ -104,6 +104,8 @@ just depends on what your preferences are. So, really, make it your own!
 
 </p>
 
+### Bonus: More about the script block
+
 ## 2. Libraries
 
 ### 2.1 What is the concept of the "libraries"?
@@ -120,10 +122,23 @@ just depends on what your preferences are. So, really, make it your own!
 
 #### Assigning variables
 
+#### Load data from your computer to R
+
 #### Data description and summary
 
 #### Transforming the data: add, delete, change
 
 #### Plotting the data
 
+#### Save data from R to your computer
+
 ### 3.3 Common mistakes, or how to save a lot of time
+
+<p>You will run into many error messages, these intimidating red lines in the console block telling you that something wrong happened. We can spend hours trying to figure out what to do to make the codes work. Again, no worries! This is part of the learning process, and to be honest, even experts can't avoid error messages. The most important thing is to learn from them, so that we are able to understand what the problem is, and how to solve it.</p>
+<p>From my experience, there are mistakes we often make especially as first users of R. I remember that many students in the classes I attended and taught gave up on learning programming languages just because they had to spend too much time on debugging very basic mistakes, and they couldn't focus on the opportunities R can offer. Below is a non-exhaustive list of such mistakes that I may update in the future.</p>
+
+#### I can't load the data from my computer
+
+#### I don't have any error message, but my code won't run
+
+#### "Variable not found", what happened?
