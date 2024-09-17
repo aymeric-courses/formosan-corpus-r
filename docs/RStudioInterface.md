@@ -105,6 +105,18 @@ a <- 4+2
 [1] 8
 ```
 <p>Now, just close R and reopen it. All the codes disappeared! We usually use R for much more than a simple calculator, and we always end up with hundreds of lines of codes. Imagine if you need to rewrite everything each time you close and reopen R... and this is where the scripts are useful!</p>
+<p>Let's do a simple exercise with the script. Write the lines below in the script block:</p>
+```
+4+2
+a <- 4+2
+a
+a+2
+```
+<p>After that, select everything, and click on 'Run'</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/Script_Demo.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/Script_Demo.gif?raw=true"/></a>
+
+<p>This is how you run a script! Alternatively, you can select everything (or just the line you interested in), and press 'enter' on your keyboard. Now you can save your script ("File > Save") and close R. Find the file you just saved on your computer and open it. Your code is still here!</p>
 
 ### Exercise: Play with your blocks!
 
