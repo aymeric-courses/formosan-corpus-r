@@ -88,9 +88,23 @@ a <- 4+2
 ```
 <p>This example is just here to show what the 'variables' are. With just simple calculations like the ones above, it seems to be quite useless. But you'll realize very quickly through this tutorial that variables are not only useful, but also necessary to handle more data.</p>
 
-### 1.4 The script block
+### 1.4 The console block
+<p>Now let's talk very briefly about the 'console block'. You just had a glimpse of it when reading the section on the variable block. Actually, there's not a lot more to say about it. <strong>The console block is the place where the code is written and being run.</strong></p>
+<p>In addition to the 'Console' tab, there are also the 'Terminal' tab and the 'Background Jobs' tab. Despite their importance, we won't have have to use them in this tutorial. So let's just skip them!</p>
 
-### 1.5 The console block
+### 1.5 The script block
+<p>The 'script' block is where you'll work most of the time. You can see it as the Word or the Note Pad of RStudio. You will better understand the importance of the scripts, one more time, with an example. If you've followed Section 1.3, you can see that you have the same code as below in your console.</p>
+
+```
+> 4+2
+[1] 6
+> a <- 4+2
+> a
+[1] 6
+> a+2
+[1] 8
+```
+<p>Now, just close R and reopen it. All the codes disappeared! We usually use R for much more than a simple calculator, and we always end up with hundreds of lines of codes. Imagine if you need to rewrite everything each time you close and reopen R... and this is where the scripts are useful!</p>
 
 ### Exercise: Play with your blocks!
 
