@@ -112,7 +112,7 @@ a <- 4+2
 a
 a+2
 ```
-<p>After that, select everything, and click on 'Run'</p>
+<p>After that, select everything, and click on 'Run'. You can also have a look at the short video below.</p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/Script_Demo.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/Script_Demo.gif?raw=true"/></a>
 
@@ -120,11 +120,19 @@ a+2
 
 ### Exercise: Play with your blocks!
 
-Your four blocks are like construction toys you can play with. You can make them disappear and then reappear, you can change their size as you wish, and you can even change the background color. In other words, make RStudio your own!
+<p>Your four blocks are like construction toys you can play with. You can make them disappear and then reappear, you can change their size as you wish, and you can even change the background color. In other words, make RStudio your own!</p>
 
-This is how you can change the size of the blocks with your mouse: (GIF of changing size)
+<p>This is how you can change the size of the blocks with your mouse:</p>
 
-This is how you change the background color of RStudio: (GIF of changing background color)
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ChangeBlockSize.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ChangeBlockSize.gif?raw=true"/></a>
+
+<p>This is how you change the background color of RStudio:</p>
+
+```
+Path: Tools > Global Options... > Appearance > Choose the theme you like in 'Editor theme'
+```
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ChangeColor.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ChangeColor.gif?raw=true"/></a>
 
 <p class="notice--info">
 
