@@ -28,7 +28,7 @@ The best way to apprehend RStudio is to understand the interface as <b>blocks</b
 
 <p class="notice--danger">
 
-:danger: When you open RStudio for the very first time, you should get something similar as in the image above, with three blocks in the same order. But it's also possible that you have something else. If that's the case, this is completely normal and this won't affect anything for the following steps!
+:warning: When you open RStudio for the very first time, you should get something similar as in the image above, with three blocks in the same order. But it's also possible that you have something else. If that's the case, this is completely normal and this won't affect anything for the following steps!
 
 </p>
 
@@ -40,9 +40,53 @@ You may not be able to see the 'console block' on your computer for the moment, 
 
 ### 1.2 The computer block
 
-The 'computer block' is the one on the right bottom side. I call it the 'computer block' but it's actually much more than that, but let's keep it simple for the moment.<br> First, click on the Files button. You will see that there is a list of files and folders from your computer. This is actually the interface you can use to communicate and navigate directly with your computer! <br> Again, look at all the options and play with them to understand what everything's about: 1/ Click on the files. How do these open? In RStudio? Directly on your computer? 2/ Try to go to other folders on your computer using the computer block. You'll see there is no mystery, this is just like navigating on your own computer as you usually do!
+<p>The 'computer block' is the one on the bottom right side. I call it the 'computer block' but it's actually much more than that, but let's keep it simple for the moment.</p>
+<p>First, click on the Files button. You will see that there is a list of files and folders from your computer. This is actually the interface you can use to communicate and navigate directly with your computer! </p>
+
+<p class="notice--info"><Again, look at all the options and play with them to understand what everything's about:<br> 
+1/ Click on the files. How do these open? In RStudio? Directly on your computer?<br> 
+2/ Try to go to other folders on your computer using the computer block. You'll see there is no mystery, this is just like navigating on your own computer as you usually do!<br></p>
+
 
 ### 1.3 The variable block
+
+<p>The 'variable block' is the one on the top right side, as in the image below.</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/VariableBlock_Raw.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/VariableBlock_Raw.png?raw=true"/></a>
+
+<p>Basically, the most important tab is the 'environment' one. This is where the variables we create when coding will be stocked. The term 'variable' can be quite abstract at the moment, so let's just exemplify it with our first code.</p>
+<p>R can be used as a simple calculator. In the 'console block', just write the following code, end press 'enter':</p>
+
+```
+4+2
+```
+<p>Normally, you'll see this:</p>
+```
+> 4+2
+[1] 6
+```
+<p>And indeed, '4 + 2' equals 6. Now, let's play a game. You want to obtain the number 8, but you have to use '4 + 2'. One option is to add 2 one more time, and you'll write the following code:</p>
+```
+> 4+2+2
+[1] 8
+```
+<p>The game may continue, and you'll need to write even more. This is when the variables can be useful. Try the following code:</p>
+```
+a <- 4+2
+```
+<p>Unlike what you've seen before, nothing appears in the console anymore. But there's something new in the variable block:</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/VariableBlock_WithVariable.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/VariableBlock_WithVariable.png?raw=true"/></a>
+
+<p>You stocked the calculation '4+2' as a variable, and you can call it anytime you want! For example, you can call it by simply writing `a` in the console, and you can also add 2 to it by writing `a + 2`, and you'll see something as follows:</p>
+
+```
+> a
+[1] 6
+> a+2
+[1] 8
+```
+<p>This example is just here to show what the 'variables' are. With just simple calculations like the ones above, it seems to be quite useless. But you'll realize very quickly through this tutorial that variables are not only useful, but also necessary to handle more data.</p>
 
 ### 1.4 The script block
 
@@ -93,6 +137,7 @@ This is how you change the background color of RStudio: (GIF of changing backgro
 ### 3.3 Common mistakes, or how to save a lot of time
 
 <p>You will run into many error messages, these intimidating red lines in the console block telling you that something wrong happened. We can spend hours trying to figure out what to do to make the codes work. Again, no worries! This is part of the learning process, and to be honest, even experts can't avoid error messages. The most important thing is to learn from them, so that we are able to understand what the problem is, and how to solve it.</p>
+
 <p>From my experience, there are mistakes we often make especially as first users of R. I remember that many students in the classes I attended and taught gave up on learning programming languages just because they had to spend too much time on debugging very basic mistakes, and they couldn't focus on the opportunities R can offer. Below is a non-exhaustive list of such mistakes that I may update in the future.</p>
 
 #### I can't load the data from my computer
