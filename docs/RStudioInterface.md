@@ -36,14 +36,14 @@ There are four main blocks, as in the following image. I give them unofficial na
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_4Blocks.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RStudio_4Blocks.png?raw=true"/></a>
 
-You may not be able to see the 'console block' on your computer for the moment, and again, this is completely normal! Just follow the steps below.
+You may not be able to see the 'script block' on your computer for the moment, and again, this is completely normal! Just follow the steps below.
 
 ### 1.2 The computer block
 
 <p>The 'computer block' is the one on the bottom right side. I call it the 'computer block' but it's actually much more than that, but let's keep it simple for the moment.</p>
 <p>First, click on the Files button. You will see that there is a list of files and folders from your computer. This is actually the interface you can use to communicate and navigate directly with your computer! </p>
 
-<p class="notice--info"><Again, look at all the options and play with them to understand what everything's about:<br> 
+<p class="notice--info"><strong>Again, look at all the options and play with them to understand what everything's about:</strong><br> 
 1/ Click on the files. How do these open? In RStudio? Directly on your computer?<br> 
 2/ Try to go to other folders on your computer using the computer block. You'll see there is no mystery, this is just like navigating on your own computer as you usually do!<br></p>
 
@@ -105,7 +105,11 @@ a <- 4+2
 [1] 8
 ```
 <p>Now, just close R and reopen it. All the codes disappeared! We usually use R for much more than a simple calculator, and we always end up with hundreds of lines of codes. Imagine if you need to rewrite everything each time you close and reopen R... and this is where the scripts are useful!</p>
-<p>Let's do a simple exercise with the script. Write the lines below in the script block:</p>
+<p>Let's do a simple exercise with the script. First, open a new script by clicking on "New File", and then the first option, called "R Script". </p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/OpenNewScript.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/OpenNewScript.gif?raw=true"/></a>
+
+<p>Write the lines below in the script block:</p>
 ```
 4+2
 a <- 4+2
