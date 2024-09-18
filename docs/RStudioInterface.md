@@ -146,6 +146,14 @@ Path: Tools > Global Options... > Appearance > Choose the theme you like in 'Edi
 
 ### Bonus: More about the script block
 
+<p>As you opened a new script, you may have realized that you had the choice between many options, as below.</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ScriptTypes.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ScriptTypes.png?raw=true"/></a>
+
+<p>We only used the "R Script" type, but you can actually do much more depending on what you want to do in your project. For example, you have "Quarto Document" or "R Markdown" which are like "R Script". The difference is that R Scripts only save your codes, while Quarto Documents or R Markdowns allows more options, and especially to render out in a PDF or markdown file. By doing so, we can share our code along with the output of the code in a beautiful way, which is very important for Open Science!</p>
+<p>You'll also remark that even if we are using R, it is actually possible to write with other programming languages, such as HTML or Python. While this is not the case for R Scripts, it is possible with other types of scripts. You can even design a whole website using R, and ask R to transfer your data online... This is indeed how I am designing the website of the tutorial!</p>
+<p>Script files have many very useful options, so many that I decided to dedicate a whole section to it. Jump <a href="#" class="btn btn--primary">here (link provided later)</a> if you want to know more!</p>
+
 ## 2. Libraries
 
 ### 2.1 What is the concept of the "libraries"?
