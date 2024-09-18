@@ -157,6 +157,42 @@ Path: Tools > Global Options... > Appearance > Choose the theme you like in 'Edi
 ## 2. Libraries
 
 ### 2.1 What is the concept of the "libraries"?
+<p>You can do many things with R. Among others:</p>
+* Basic calculations
+* Data manipulation
+* Draw figures or plots of your data
+* Create geographical maps
+* Run simple and advanced statistics (summaries, t-tests, ANOVA, LMR, GLMR, Bayesian statistics, etc.)
+* Design a whole website
+* Preprocess neuroimaging data (EEG, fMRI, etc.)
+* Download data from the web to be further manipulated
+* Create applications
+
+<p>And many many other possibilities. You may have a sense of it, the more complex the task is, the more codes it requires. For example, it is not the same to calculate '2+4' and putting statistical data on the map of Europe!</p>
+<p>It can be overwhelming, and we can even have the feeling that quantitative research is not for us after all. <strong>Good news!</strong> We actually don't need to write all the codes from scratch!</p>
+
+<p class="notice--info">
+
+<strong> More on the nature of the R Project </strong> <br> R is free and open source, it is a collaborative concept. And this is very important to be aware of this: <strong>Nobody, <i>nobody</i>, writes all the raw codes for each task in one script.</strong> Just like we read articles and books instead of doing all the research on the field when we want to know more about something, we can rely on other people's work when writing codes.
+<br>People wrote, and more importantly, <b>published</b>, articles and books so that we can have access to more knowledge.
+<br>People wrote, and more importantly, <b>shared online</b>, lines and lines of codes and functions such that we can have access to them, use them, instead of rewriting everything.
+</p>
+<p>We need to introduce some concepts now:</p>
+* Lines of codes
+* Functions
+* Packages/Libraries
+
+| Name | Concept | 
+| -------- | ------- | 
+| Line of codes | Just the code you write in the script/console to perform something specific. They are usually the most simple. | 
+| Function | Sometimes, you need more than one line of code to perform a task. You may even want to perform the exact same task several times, but with different data. Of course, you can just copy and paste the same code everytime, but you can also choose to simplify it into one line of code. This is what a function is: <b>a cluster of lines of codes</b> | 
+| Library/Package | And very often, you'll need to perform many tasks which require more than one function. You can choose to write all the functions by hand anytime you need them. Or you can just have them already loaded somewhere in R, such that you can refer to them later when you need them. This is what a library or package is: <b>a cluster of functions</b> | 
+
+<p>There are many many packages available for free with R. You can find them <a href="#https://cran.r-project.org/web/packages/available_packages_by_name.html" target="_blank" class="btn btn--primary">here</a>. And they are even more that are not directly available from the R website, but developped and distributed by other people (generally on Github). They always come with a logo, as below.</p> 
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RPackages.jpg?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RPackages.jpg?raw=true"/></a>
+
+<p>We will very often refer to some of them, such as "readxl" to import data from Excel, "ggplot2" to draw figures, "tidyr" and "dplyr" to manipulate data, etc.</p>
 
 ### 2.2 How to install and use libraries?
 
