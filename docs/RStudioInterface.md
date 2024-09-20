@@ -253,14 +253,88 @@ While you're going through the examples below, don't hesitate to open an R scrip
 ### 3.2 Your first script: Some syntax and vocabulary of R
 
 ### Add comments
-<p>A use</p>
+<p>A useful tip when writing R code is the possibility to add comments. I use it all the time such that I can annotate why I used this function, the size I want to print my figure, etc. Comments are marked with the hashtag sign "#". See the example below.<br>
+Note that you can add as many hashtag signs as you want. I personally have the habit to use three hashtag signs, but you could also just use one.</p>
+
+```
+### This is a line of comment. I won't be run in the console, even if it is copied there.
+2+4 ### We can also add comments after a code. In that case, it will only run the code at the beginning of the line, and ignore everything after the # sign.
+```
+<p>Now that you know how to add comments in the script you have opened, just comment every line, even the ones that you created yourself!</p>
 
 #### Basic calculations
+<p>We have already referred to basic calculations in the previous subsections. These so-called basic calculations can even be complex, as below.</p>
 
+```
+2 + 343 * 34 / (5 - 342 + 45 * 36)
+```
 #### Assigning variables
+<p>We have also already mentioned how to assign variables in previous subsections. Let's recall it below.</p>
+
+```
+a <- 4+2
+```
+
+<p>Another way to assign variables is by using the equal sign "=". You just obtain the same results. I prefer using "<-" because I find it visually more salient, but it depends on one's preference.</p>
+
+```
+a = 4+2
+```
+<p>You can also assign strings of letters. For example, you can try to add "This is my first script" to the variable "b".</p>
+
+```
+b <- This is my first script
+```
+<p>You will remark that... it didn't work! You surely had the following message:</p>
+
+```
+Error: unexpected symbol in "b <- This is"
+```
+<p>This is "This is my first script" has never been defined in R. In other words, R does not know what you are talking about! If you want to add strings of words, you need to use the quotation marks, as below.</p>
+```
+b <- "This is my first script"
+```
+<p>You can also assign tables, datasets, plots, etc. You can even assign variables to variables. Try this below: </p>
+```
+b <- a
+```
+<p>What happened here? You had a variable called 'a', which had the value "1". You also had the variable called 'b', which had the value "This is my first script". In the above line of code, you are asking R to assign the value of the variable a to b... in other words, the value of 'b' becomes the same as 'a'!</p>
 
 #### Load data from your computer to R
+<p>You may have already collected data, and you want to import your dataset into R. For this section, let's use the data from the survey of "Great American Coffee Taste Test". You can download the file here. (source of the data: https://mavenanalytics.io/data-playground).</p>
 
+<p class="notice--danger">
+
+Don't forget to place this file in the folder you are working in, and to set this folder as your working directore!
+<br>
+</p>
+
+<p>Now you have two ways to import the data into R: (1) with a line of code, (2) with the R interface. Let's first do it with the code below.</p>
+```
+data <- read.csv("~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv", header=TRUE)
+```
+<p>Now let's decompose this:
+- read.csv(). This is the function which is used to import the file, which is a CSV file.
+- There are two elements inside the function, which are seperated with a comma:
+1- "~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv". This is the path to access to the file, as well as the full name of the file.
+2- header=TRUE. This means the first line of the table corresponds to the titles of the columns (you can try and change to "header = FALSE" to see what happens!).
+- Finally, the dataset is assigned to the variable called "data".
+</p>
+
+<p class="notice"><strong> &#129504; Think about it </strong><br>
+Why do we need to assign the data to a variable? As I always say, computers are very powerful and very stupid at the same time: they are here to do in a very short amount of time exactly what you tell them to do. In other words, if you only use the "read.csv()" function, it will only read the data, and forget it, that's it!<br>
+But what we want to do actually is to read the data and save them into R, such that we can do further manipulations. This is why we need to "save" them using variables!
+</p>
+
+<p>The second way is to use the R interface. To do so, check you Variable block. You have a tab called "Import Dataset". Just click on it, and then "From Text (base)...". A new window will open, and you just have to choose the file you want to import.<br>
+Now you have a new window where you are asked to set the options to import the file:
+- You can change the name of the variable it will be assigned to. By default, it is the name of the file. Try to change to "data"
+- You can also set the option that the first line corresponds to the names or labels of the columns. Where you see "Heading", click on "Yes".
+And finally, you can click on "Import".</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ImportDataBaseR.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ImportDataBaseR.gif?raw=true"/></a>
+
+<p>And you are done, now you have a whole dataset ready for manipulation in R!</p>
 #### Data description and summary
 
 #### Transforming the data: add, delete, change
