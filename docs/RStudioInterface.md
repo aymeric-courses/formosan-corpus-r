@@ -207,7 +207,7 @@ Now we will turn to the "Packages" tab, as in the image below. What you need to 
 <p>Alternatively, you can download/install packages directly from the Console block. You just need to write one line of code:</p>
 
 ```
-install.packages("[Name of the packages you wish to install]")
+install.packages("[Name of the package you wish to install]")
 ```
 <p>For instance, if you want to install the package 'ggplot2', which is used to draw figures, here is what you need to write:</p>
 
@@ -227,18 +227,39 @@ library(ggplot2)
 Does having the book at home mean that you just need to go to your kitchen and start cooking? Of course not! You need to have this book opened with you in the kitchen to follow the recipies! <strong>This is exactly what we are doing when we load the packages in the <i>'library()'</i> step!</strong></p>
 
 ## 3. Some basic elements of R language
+<p>This subsection will introduce some basic elements of R codes that cannot be avoided. I will introduce codes referred to as 'R-based', meaning that there is no need to intall any additional package.</p>
+
+<p class="notice--success">
+
+<strong> :computer: Play around!</strong><br>
+While you're going through the examples below, don't hesitate to open an R script, copy and paste the codes, run them to see what happens. In addition, you can also modify the codes and try new things. You may run into errors, but that's ok. From my experience, it is the best way to get used to the R interface.
+<br>
+</p>
 
 ### 3.1 First things first: The 'working directory'
+<p>This is one of the most important step, and also something that I always (and everybody should) check before anything else. The 'working directory' refers to the folder in your computer R is looking into. While you can navigate in the folders of your computer using the Computer block, this does not mean that R remembers where you are. To do so, you have to tell R:<.p>
+
+> This is <strong>THE</strong> folder where the files I will load are, <strong>THE</strong> folder where my script will be saved, <strong>THE</strong> folder where all my files will be saved
+
+<p>This is what the 'working directory', it is <strong>THE</strong> folder. Now, how to set your working directory, <strong>THE</strong> folder?</p>
+
+1- Use the Computer block to navigate in your computer until you are in the folder you wish to work in
+2- Click on the small image of the wheel, and then click on "Save as Working Directory"
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/SetWorkingDirectory.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/SetWorkingDirectory.gif?raw=true"/></a>
+
+<p>And you're done! You will see that a line of code appeared in the Console block, actually setting the working directory.</p>
 
 ### 3.2 Your first script: Some syntax and vocabulary of R
+
+### Add comments
+<p>A use</p>
 
 #### Basic calculations
 
 #### Assigning variables
 
 #### Load data from your computer to R
-
-#### Add comments
 
 #### Data description and summary
 
