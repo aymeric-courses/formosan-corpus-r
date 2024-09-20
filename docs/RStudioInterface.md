@@ -313,12 +313,12 @@ Don't forget to place this file in the folder you are working in, and to set thi
 ```
 data <- read.csv("~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv", header=TRUE)
 ```
-<p>Now let's decompose this:
-- read.csv(). This is the function which is used to import the file, which is a CSV file.
-- There are two elements inside the function, which are seperated with a comma:
-1- "~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv". This is the path to access to the file, as well as the full name of the file.
-2- header=TRUE. This means the first line of the table corresponds to the titles of the columns (you can try and change to "header = FALSE" to see what happens!).
-- Finally, the dataset is assigned to the variable called "data".
+<p>Now let's decompose this:<br>
+<strong>-</strong> read.csv(). This is the function which is used to import the file, which is a CSV file.<br>
+<strong>-</strong> There are two elements inside the function, which are seperated with a comma:<br>
+<strong>1-</strong> "~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv". This is the path to access to the file, as well as the full name of the file.<br>
+<strong>2-</strong> header=TRUE. This means the first line of the table corresponds to the titles of the columns (you can try and change to "header = FALSE" to see what happens!).<br>
+<strong>-</strong> Finally, the dataset is assigned to the variable called "data".
 </p>
 
 <p class="notice"><strong> &#129504; Think about it </strong><br>
@@ -327,9 +327,9 @@ But what we want to do actually is to read the data and save them into R, such t
 </p>
 
 <p>The second way is to use the R interface. To do so, check you Variable block. You have a tab called "Import Dataset". Just click on it, and then "From Text (base)...". A new window will open, and you just have to choose the file you want to import.<br>
-Now you have a new window where you are asked to set the options to import the file:
-- You can change the name of the variable it will be assigned to. By default, it is the name of the file. Try to change to "data"
-- You can also set the option that the first line corresponds to the names or labels of the columns. Where you see "Heading", click on "Yes".
+Now you have a new window where you are asked to set the options to import the file:<br>
+<strong>-</strong> You can change the name of the variable it will be assigned to. By default, it is the name of the file. Try to change to "data".<br>
+<strong>-</strong> You can also set the option that the first line corresponds to the names or labels of the columns. Where you see "Heading", click on "Yes".<br>
 And finally, you can click on "Import".</p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ImportDataBaseR.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ImportDataBaseR.gif?raw=true"/></a>
