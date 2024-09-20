@@ -237,7 +237,7 @@ While you're going through the examples below, don't hesitate to open an R scrip
 </p>
 
 ### 3.1 First things first: The 'working directory'
-<p>This is one of the most important step, and also something that I always (and everybody should) check before anything else. The 'working directory' refers to the folder in your computer R is looking into. While you can navigate in the folders of your computer using the Computer block, this does not mean that R remembers where you are. To do so, you have to tell R:<.p>
+<p>This is one of the most important step, and also something that I always (and everybody should) check before anything else. The 'working directory' refers to the folder in your computer R is looking into. While you can navigate in the folders of your computer using the Computer block, this does not mean that R remembers where you are. To do so, you have to tell R:</p>
 
 > This is <strong>THE</strong> folder where the files I will load are, <strong>THE</strong> folder where my script will be saved, <strong>THE</strong> folder where all my files will be saved
 
