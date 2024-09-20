@@ -195,6 +195,36 @@ Path: Tools > Global Options... > Appearance > Choose the theme you like in 'Edi
 <p>We will very often refer to some of them, such as "readxl" to import data from Excel, "ggplot2" to draw figures, "tidyr" and "dplyr" to manipulate data, etc.</p>
 
 ### 2.2 How to install and use libraries?
+<p>Installing libraries is quite easy. You have two ways to do so:</p>
+* <strong>1/ Using the Computer block</strong>
+<p>So far, we've only mentioned the Computer block as the block where you can browse the folders and open the files on your computer. This block actually has more functions. If you look at the tabs, you will remark that we've only talked about the "Files". <br>
+Now we will turn to the "Packages" tab, as in the image below. What you need to do is to click on "Install", you write and select the name of the library you want to install, and finally click on "Install". That's it!</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ComputerBlockPackages.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ComputerBlockPackages.png?raw=true"/></a>
+<p>Give R a couple of minutes while it's downloading the data and installing on your computer.</p>
+
+* <strong>2/ Using the Console block</strong>
+<p>Alternatively, you can download/install packages directly from the Console block. You just need to write one line of code:</p>
+
+```
+install.packages("[Name of the packages you wish to install]")
+```
+<p>For instance, if you want to install the package 'ggplot2', which is used to draw figures, here is what you need to write:</p>
+
+```
+install.packages("ggplot2")
+```
+<p>You'll remark that for installing the packages, you need to write the name of the package between quotation marks</p>
+
+<p>Now that you have downloaded the packages you need, this does not mean that you can use the functions in the libraries right away. The packages are installed, but you need to "call" them, or to load them, such that they are ready to use. Note that no quotation marks are used with this function.</p>
+```
+library([Name of the package])
+library(ggplot2)
+```
+
+<p class="notice"><strong> &#129504; Think about it </strong>
+<br>Let's keep the metaphor of the articles and books published by other people. You want to prepare a memorable dinner, and to do so you need to buy a book with recipies that you can't find online. To do so, you go to the bookstore and buy this wonderful book. Back home, you just put it on your bookshelf. <strong>The step of buying the book and bringing it back home corresponds to the <i>'install.packages()'</i> step<br>
+Does having the book at home mean that you just need to go to your kitchen and start cooking? Of course not! You need to have this book opened with you in the kitchen to follow the recipies! <strong>This is exactly what we are doing when we load the packages in the <i>'library()'</i> step!</p>
 
 ## 3. Some basic elements of R language
 
