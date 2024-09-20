@@ -223,8 +223,8 @@ library(ggplot2)
 ```
 
 <p class="notice"><strong> &#129504; Think about it </strong>
-<br>Let's keep the metaphor of the articles and books published by other people. You want to prepare a memorable dinner, and to do so you need to buy a book with recipies that you can't find online. To do so, you go to the bookstore and buy this wonderful book. Back home, you just put it on your bookshelf. <strong>The step of buying the book and bringing it back home corresponds to the <i>'install.packages()'</i> step<br>
-Does having the book at home mean that you just need to go to your kitchen and start cooking? Of course not! You need to have this book opened with you in the kitchen to follow the recipies! <strong>This is exactly what we are doing when we load the packages in the <i>'library()'</i> step!</p>
+<br>Let's keep the metaphor of the articles and books published by other people. You want to prepare a memorable dinner, and to do so you need to buy a book with recipies that you can't find online. To do so, you go to the bookstore and buy this wonderful book. Back home, you just put it on your bookshelf. <strong>The step of buying the book and bringing it back home corresponds to the <i>'install.packages()'</i> step.</strong><br>
+Does having the book at home mean that you just need to go to your kitchen and start cooking? Of course not! You need to have this book opened with you in the kitchen to follow the recipies! <strong>This is exactly what we are doing when we load the packages in the <i>'library()'</i> step!</strong></p>
 
 ## 3. Some basic elements of R language
 
@@ -237,6 +237,8 @@ Does having the book at home mean that you just need to go to your kitchen and s
 #### Assigning variables
 
 #### Load data from your computer to R
+
+#### Add comments
 
 #### Data description and summary
 
