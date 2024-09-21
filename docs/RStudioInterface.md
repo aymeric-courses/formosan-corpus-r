@@ -335,6 +335,7 @@ And finally, you can click on "Import".</p>
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ImportDataBaseR.gif?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ImportDataBaseR.gif?raw=true"/></a>
 
 <p>And you are done, now you have a whole dataset ready for manipulation in R!</p>
+
 #### Data description and summary
 
 #### Transforming the data: add, delete, change
