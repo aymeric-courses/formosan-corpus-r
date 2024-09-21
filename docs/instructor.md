@@ -6,4 +6,4 @@ author_profile: true
 ---
 
 <p>Name: Aymeric Collart</p>
-<p>Website: https://aymeric-collart.github.io/</p>
+<p>Website: <a ref="https://aymeric-collart.github.io/" target="_blank">https://aymeric-collart.github.io/</a></p>
