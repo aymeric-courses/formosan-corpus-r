@@ -305,7 +305,7 @@ b <- a
 
 <p class="notice--danger">
 
-Don't forget to place this file in the folder you are working in, and to set this folder as your working directore!
+Don't forget to place this file in the folder you are working in, and to set this folder as your working directory!
 <br>
 </p>
 
@@ -316,7 +316,7 @@ data <- read.csv("~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv", header=TRUE)
 <p>Now let's decompose this:<br>
 <strong>-</strong> read.csv(). This is the function which is used to import the file, which is a CSV file.<br>
 <strong>-</strong> There are two elements inside the function, which are seperated with a comma:<br>
-<strong>1-</strong> "~/fake/GACTT_RESULTS_ANONYMIZED_v2.csv". This is the path to access to the file, as well as the full name of the file.<br>
+<strong>1-</strong> "~/Fake/GACTT_RESULTS_ANONYMIZED_v2.csv". This is the path to access to the file, as well as the full name of the file.<br>
 <strong>2-</strong> header=TRUE. This means the first line of the table corresponds to the titles of the columns (you can try and change to "header = FALSE" to see what happens!).<br>
 <strong>-</strong> Finally, the dataset is assigned to the variable called "data".
 </p>
@@ -337,6 +337,63 @@ And finally, you can click on "Import".</p>
 <p>And you are done, now you have a whole dataset ready for manipulation in R!</p>
 
 #### Data description and summary
+
+<p>I assume here that the dataset we just imported is still present in your environment. Now we will learn quick ways to describe and summarize the data we have.</p>
+<p>The first step is to understand the structure of the dataset. This can be easily done with the 'str()' function.</p>
+```
+str(data)
+```
+<p>You will obtain the following results. For clarity, I only give the first four lines here.</p>
+```
+'data.frame':	4042 obs. of  111 variables:
+ $ Submission.ID  : chr  "gMR29l" "BkPN0e" "W5G8jj" "4xWgGr" ...
+ $ What.is.your.age.  : chr  "18-24 years old" "25-34 years old" "25-34 years old" "35-44 years old" ...
+ $ How.many.cups.of.coffee.do.you.typically.drink.per.day.   : chr  "" "" "" "" ...
+ $ Where.do.you.typically.drink.coffee.  : chr  "" "" "" "" ...
+```
+<p>This is how to read the data:</p>
+* The first line indicates the nature of the dataset. This is a "data frame", with 4042 rows and 111 columns. Afterwards, the str() function describes these 111 columns.
+* The first column is called "Submission.ID". The rows consist of strings of characters, and the str() function shows the data of the first four lines.
+* The second column is labelled "What.is.your.age.", and again it consists of rows of strings of characters.
+* The same logic applies for all the lines.
+
+<p>You will remark that we are facing a problem. In this survey, the participants were asked their age, and then their results were annotated as "18-24 years old", "25-34 years old", etc. In other words, there are <strong>groups of age</strong>, but when the data were imported, R considered them as strings of characters. Now we need to tell R that there are groups. This is done with the "as.factor()" function.</p>
+
+```
+data$What.is.your.age. <- as.factor(data$What.is.your.age.)
+```
+<p>Now let's decompose this line:</p>
+* In the as.factor() function, we told R the date from which column needed to be transformed into groups. We now that this is the column called "What.is.your.age." in the dataset called "data". In R language, we write as follows: <i>data<strong>$</strong>What.is.your.age.</i>. The dollar sign is here to translate "inside of"
+* If we just write this part, R will only transform this column as a group, but it will not save it. So we need to save this operation in a variable, and as we want to replace the column considered as strings of characters, we do not have to create a new variable: we just use this column!
+
+<p>Actually, the same problem occurs for the two following columns: (1) How.many.cups.of.coffee.do.you.typically.drink.per.day., and (2) Where.do.you.typically.drink.coffee. . So we need to do the same changes.</p>
+
+```
+data$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- as.factor(data$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+
+data$Where.do.you.typically.drink.coffee. <- as.factor(data$Where.do.you.typically.drink.coffee.)
+```
+<p>And now let's run the str() function again. Here are the results of the first four lines:</p>
+
+```
+'data.frame':	4042 obs. of  111 variables:
+ $ Submission.ID  : chr  "gMR29l" "BkPN0e" "W5G8jj" "4xWgGr" ...
+ $ What.is.your.age. : Factor w/ 8 levels "","<18 years old",..: 4 5 5 6 5 8 4 1 5 1 ...
+ $ How.many.cups.of.coffee.do.you.typically.drink.per.day. : Factor w/ 7 levels "","1","2","3",..: 1 1 1 1 1 1 1 1 6 1 ...
+  $ Where.do.you.typically.drink.coffee. : Factor w/ 66 levels "","At a cafe",..: 1 1 1 1 1 1 10 1 2 1 ...
+```
+
+<p>This is much more informative!  For instance, this is telling us that there are 8 groups of age (in R, these are called "levels"). But maybe we would like to know the number of people per group among the 4042 participants. This can be done with the summary() function.</p>
+
+```
+summary(data)
+```
+<p>This is what you obtain in the Console block:</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ExampleSummaryFunction.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ExampleSummaryFunction.png?raw=true"/></a>
+
+<p>How to read this? It is telling us that there are 1986 respondents in the "25-34 years old" group, 960 in the "35-44 years old" group, etc. Also that there are 1277 people drinking 1 cup of coffee per day, 1663 people 2 cups of coffe per day, etc.</p>
+
 
 #### Transforming the data: add, delete, change
 
