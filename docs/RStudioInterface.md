@@ -399,7 +399,7 @@ summary(data)
 
 <p>Transforming the data is the task we spend the most of out time when doing the research. This can be tedious, but it is crucial to plot the right data and to conduct the right analyses. It is also very important to be aware of what we are doing when transforming the data. The aim is to make them more easily readable for R.</p>
 
-<p class="warning">Data transformation or data manipulation does not mean new data creation or data selection!<br>
+<p class="danger">Data transformation or data manipulation does not mean new data creation or data selection!<br>
 We make changes to highlight some results, we select for ease of clarity, but such changes and selections are actually transformations and selection of <strong>the form</strong>, not the content!
 </p>
 
@@ -458,9 +458,111 @@ data2 <- subset(data2, How.many.cups.of.coffee.do.you.typically.drink.per.day. !
 data2$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- droplevels(data2$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
 ```
 
+<p>Now we would like to summarize the number of observations per group. And I will have to make an exception to what I said earlier: We are using the package called "dplyr". So you will need to download it beforehand.<br>
+Here is the code you need to write:</p>
+
+```
+library(dplyr)
+
+data3 <- data2 %>% 
+  group_by(What.is.your.age., How.many.cups.of.coffee.do.you.typically.drink.per.day.) %>% 
+  summarize(Count = n())
+```
+<p>Let's decompose this:</p>
+* In the first line, we just loaded the library we need.
+* The sign "%>%" is here to say we are going to run the codes below it based on the dataset called "data2"
+* The "group_by()" function is here to tell R which columns we will take into consideration. Notice that we do not need to write "data2$What.is.your.age." since we used the "%>%" sign.
+* Finally, the last line of code is the transformation we are performing: We want to summarize the data. Inside the "summarize()" function, we need to give the details of what we want to do (notice that you can also write "summarise()"!).
+  * The "n()" function means that we just want to count the number of observations per group,
+  * And the observations will be found in the "Count" column. Note that you can replace "Count" by any name you want!
+* And finally, we store this summary table into a new variable, which we call "data3".
+
+<p>You should obtain something like this in the picture below:</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ResultsSummarize.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ResultsSummarize.png?raw=true"/></a>
+
+<p>There are of course many more ways to transform the data, summarize them, etc. This subsection was only a snapshot of what is possible to do with a very minimum number of lines of codes!</p>
+
 #### Plotting the data
 
+<p>Now that we have summarized data, we can plot to see what they look like. We will use a very straightforward function, called... "plot()"! Let's see what it does with the codes below.</p>
+
+```
+plot(x = data3$How.many.cups.of.coffee.do.you.typically.drink.per.day., y = data3$Count)
+
+plot(x = data3$What.is.your.age., y = data3$Count)
+```
+<p>We ran into a very superficial problem: R sorted the groups in alphabetical order, which is not quite straightforward! So we will need to reorder the levels before. Let's do it with the code below:</p>
+
+```
+data3$What.is.your.age. <- factor(data3$What.is.your.age., levels = c("<18 years old",
+                                                                      "18-24 years old",
+                                                                      "25-34 years old",
+                                                                      "35-44 years old",
+                                                                      "45-54 years old",
+                                                                      "55-64 years old",
+                                                                      ">65 years old"))
+
+data3$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- factor(data3$How.many.cups.of.coffee.do.you.typically.drink.per.day., levels = c("Less than 1",
+                                                                      "1",
+                                                                      "2",
+                                                                      "3",
+                                                                      "4",
+                                                                      "More than 4"))
+```
+<p>You can check whether this worked by using the "levels()" function we introduced above.</p>
+
+```
+levels(data3$What.is.your.age.)
+
+[1] "<18 years old"   "18-24 years old" "25-34 years old" "35-44 years old" "45-54 years old"
+[6] "55-64 years old" ">65 years old"  
+
+levels(data3$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+
+[1] "Less than 1" "1"           "2"           "3"           "4"           "More than 4"
+```
+<p>Everything is in the order we want, now we can plot one more time!</p>
+
+```
+plot(x = data3$How.many.cups.of.coffee.do.you.typically.drink.per.day., y = data3$Count)
+
+plot(x = data3$What.is.your.age., y = data3$Count)
+```
+<p>You will obtain the plots as below.</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ResultsAge.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ResultsAge.png?raw=true"/></a>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ResultsNumberCoffee.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ResultsNumberCoffee.png?raw=true"/></a>
+
+<p>The first plot shows that most of the participants are between 25 and 34 years old. The second plot indicates that most of the respondents drink between 1 and 2 cups of coffee everyday.<br>
+You might be curious whether there is an interaction, with older people drinking more coffee than younger people. In other words, you would need three variables in the codes... which is very difficult to do without other packages, espectially the "ggplot2" one! You can try by yourself!</p>
+
 #### Save data from R to your computer
+<p>For some reasons, we may want to save our data in the computer. But we are actually referring to two things at the same time: (a) Saving the R dataset, and (b) Exporting the R dataset such that we can open it with other programs. Both are doable, and let's start with the first option with the code below.</p>
+
+```
+save(data3, file = "data3.Rdata")
+```
+<p>We just need the "save()" function, inside which we first tell R the dataset we want to save, and then the name of the file on the computer. We can choose the name of the file by ourself, as long as we do not forget the ".Rdata" extension. Once it is save, we can load the file later using the "load()" function.</p>
+
+```
+load(file = "data3.Rdata")
+```
+
+<p>We may also want to save the data as a .csv file, readable by programs such as Excel. This is done with the code below:</p>
+
+```
+write.csv(data3, "data3.csv", row.names = FALSE)
+```
+
+<p>Let's unpack it:</p>
+* We use the "write.csv" function, and we provide details inside the parentheses for:
+  * The name of the dataset we want to export,
+  * The name we want it to have in our computer, and 
+  * the "row.names = FALSE" is here to say that we do not want the index of the rows. You can try and change to "TRUE" to see what happens.
+  
+<p>It is also possible to export to .xlsx files, more directly readable by Excel, but this requires another library. We will encounter this in the rest of the tutorial.</p>
 
 ### 3.3 Common mistakes, or how to save a lot of time
 
