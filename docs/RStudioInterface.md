@@ -392,10 +392,71 @@ summary(data)
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ExampleSummaryFunction.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/ExampleSummaryFunction.png?raw=true"/></a>
 
-<p>How to read this? It is telling us that there are 1986 respondents in the "25-34 years old" group, 960 in the "35-44 years old" group, etc. Also that there are 1277 people drinking 1 cup of coffee per day, 1663 people 2 cups of coffe per day, etc.</p>
+<p>How to read this? It is telling us that there are 1986 respondents in the "25-34 years old" group, 960 in the "35-44 years old" group, etc. Also that there are 1277 people drinking 1 cup of coffee per day, 1663 people 2 cups of coffee per day, etc.</p>
 
 
 #### Transforming the data: add, delete, change
+
+<p>Transforming the data is the task we spend the most of out time when doing the research. This can be tedious, but it is crucial to plot the right data and to conduct the right analyses. It is also very important to be aware of what we are doing when transforming the data. The aim is to make them more easily readable for R.</p>
+
+<p class="warning">Data transformation or data manipulation does not mean new data creation or data selection!<br>
+We make changes to highlight some results, we select for ease of clarity, but such changes and selections are actually transformations and selection of <strong>the form</strong>, not the content!
+</p>
+
+<p>You are actually already familiar with data transformation. In the previous section we have changed the class of the data of three columns: strings of characters to factors. I will exemplify here other changes we can make, but the list is not exhaustive at all.</p>
+
+<p>You have surely remarked that there are many columns in the dataset we loaded. Generally, we collect more than we need, in case that in the end, we may need these data. But sometimes, having very large datasets can make us quite confused when trying to read and interpret the data. Therefore, sometimes, we would like a dataset with only the comumns we need.<br>
+For instance, we have talked of three columns so far in the previous section. We want to select them, in addition to the column indicating the ID of the respondents. We can do so with the code below.</p>
+
+```
+data2 <- data[,c("Submission.ID",
+                 "What.is.your.age.",
+                 "How.many.cups.of.coffee.do.you.typically.drink.per.day.",
+                 "Where.do.you.typically.drink.coffee.")] 
+```
+<p>Again, let's decompose this:</p>
+* The dataset from which we want to select data is called 'data'. We select data from it by adding brackets, therefore "data[  ]".
+* The columns are selected by adding a comma first (there are reasons for this, but it is not important for our purpose now), and then adding the name of the column. For example, we may have written "data[, "Submission.ID"]", and this selects the columns called 'Submission.ID'.
+* But we want to select more than one column. Unfortunately, we cannot write the names of all the columns directly. We need to inform R first that there is a list of columns. We use "c()" to do so.
+* Finally, we save this into a variable. We may have saved this to "data" (i.e. "data <- data[....]"), but when doing so, we would have overwritten our original data. And if in the end, we realize that we need other columns, we have to redo everything! This is why it is good to have the habit to save into other variables when performing transformations of this kind.
+
+<p>Now we will learn another trick: How to check which groups we have. In other words, how many groups of age are there in the data we have? This can be done as below:</p>
+
+```
+levels(data2$What.is.your.age.)
+```
+<p>We use the level() function, and we inform R which columns we want to look at inside the parentheses. We obtain the results below:</p>
+
+```
+[1] ""                "<18 years old"   ">65 years old"   "18-24 years old" "25-34 years old"
+[6] "35-44 years old" "45-54 years old" "55-64 years old"
+```
+
+<p>There are 8 groups, but the first one corresponds to people who did not reply. We would like to remove this in order to have a full dataset. If we do not want to do it with other libraries, we can do it as follows:</p>
+
+```
+data2 <- subset(data2, What.is.your.age. != "")
+
+data2$What.is.your.age. <- droplevels(data2$What.is.your.age.)
+```
+* In the first line, we are telling R to remove the rows where the group is "".
+  * To do so, we use the subset() function. In the parentheses, we set the parameters to tell R which rows to remove: dataset name ("data2"), column ("What.is.your.age."), level ("").
+  * Note that we used the sign "!=". This signs means "remove". If we change this sign to "==", it means "select"!
+* We only removed the rows corresponding to "", but not the label. This is the purpose of the second line.
+
+<p>Now you can run the "levels(data2$What.is.your.age.)" again. You will see that the level "" has indeed been removed!</p>
+
+```
+[1] "<18 years old"   ">65 years old"   "18-24 years old" "25-34 years old" "35-44 years old"
+[6] "45-54 years old" "55-64 years old"
+```
+<p>If we look at the column called "How.many.cups.of.coffee.do.you.typically.drink.per.day.", there is the same problem. We just have to run the same codes to solve this!</p>
+
+```
+data2 <- subset(data2, How.many.cups.of.coffee.do.you.typically.drink.per.day. != "")
+
+data2$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- droplevels(data2$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+```
 
 #### Plotting the data
 
