@@ -399,7 +399,7 @@ summary(data)
 
 <p>Transforming the data is the task we spend the most of out time when doing the research. This can be tedious, but it is crucial to plot the right data and to conduct the right analyses. It is also very important to be aware of what we are doing when transforming the data. The aim is to make them more easily readable for R.</p>
 
-<p class="danger">Data transformation or data manipulation does not mean new data creation or data selection!<br>
+<p class="notice--danger">Data transformation or data manipulation does not mean new data creation or data selection!<br>
 We make changes to highlight some results, we select for ease of clarity, but such changes and selections are actually transformations and selection of <strong>the form</strong>, not the content!
 </p>
 
