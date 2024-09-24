@@ -301,7 +301,7 @@ b <- a
 <p>What happened here? You had a variable called 'a', which had the value "1". You also had the variable called 'b', which had the value "This is my first script". In the above line of code, you are asking R to assign the value of the variable a to b... in other words, the value of 'b' becomes the same as 'a'!</p>
 
 #### Load data from your computer to R
-<p>You may have already collected data, and you want to import your dataset into R. For this section, let's use the data from the survey of "Great American Coffee Taste Test". You can download the file here. (source of the data: https://mavenanalytics.io/data-playground).</p>
+<p>You may have already collected data, and you want to import your dataset into R. For this section, let's use the data from the survey of "Great American Coffee Taste Test". You can download the file <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/GACTT_RESULTS_ANONYMIZED_v2.csv" target="_blank" class="btn btn--primary">here</a>. (source of the data: <a href="https://mavenanalytics.io/data-playground" target="_blank">https://mavenanalytics.io/data-playground</a>).</p>
 
 <p class="notice--danger">
 
@@ -563,6 +563,10 @@ write.csv(data3, "data3.csv", row.names = FALSE)
   * the "row.names = FALSE" is here to say that we do not want the index of the rows. You can try and change to "TRUE" to see what happens.
   
 <p>It is also possible to export to .xlsx files, more directly readable by Excel, but this requires another library. We will encounter this in the rest of the tutorial.</p>
+
+#### R script of this section
+
+<p>You can find the R scripts including the codes presented in this section <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/Script_Section1.2.R" target="_blank" class="btn btn--primary">here</a>. Don't hesitate to use it and add comments for each line of code to make your own!</p>
 
 ### 3.3 Common mistakes, or how to save a lot of time
 
