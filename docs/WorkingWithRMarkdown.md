@@ -31,11 +31,12 @@ But what are they good for? R Markdown files are especially interesting concerni
 
 <p>We will take the codes from <a href="https://aymeric-courses.github.io/formosan-corpus-r/docs/RStudioInterface/#32-your-first-script-some-syntax-and-vocabulary-of-r" target="_blank">Section 1.2</a> as an example to create our very first R Markdown document.</p>
 
-### 2.1 Configuring the file: The YAML block
+### 2.2 Configuring the file: The YAML block
 
-### 2.2 Navigating the file: Titles and subtitles
+<p>Let's start with configuring the file: This corresponds to the first lines, or the header, of the script that you have just created. This is called the YAML part.</p>
+### 2.3 Navigating the file: Titles and subtitles
 
-### 2.3 Writing the content
+### 2.4 Writing the content
 
 #### Writing the narrative
 
