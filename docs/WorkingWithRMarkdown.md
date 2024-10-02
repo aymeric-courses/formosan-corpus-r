@@ -128,7 +128,7 @@ Sometimes, R will display simple messages and/or warnings at the same time as yo
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true"/></a>
 
 <p>Finally, you can run the code chunk without running ALL the document. Can you see the green 'play' logo on the top right of the code chunk? You just need to click on it!</p>
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true"/></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_RunBlock.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_RunBlock.png?raw=true"/></a>
 
 # 3. Save, render and share
 
@@ -137,5 +137,4 @@ Sometimes, R will display simple messages and/or warnings at the same time as yo
 ## Markdown and PDF documents of Sections 1.2 and 1.3
 
 <p>Maybe you were playing with your own R Markdown document at the same time as you were following this section, and add the codes of the Section 1.2 in it. In that case, congratulations! You have your very first R Markdown document ready! If not, you can just download the template <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/Markdown_Section1.3.Rmd" target="_blank" class="btn btn--primary">here</a>.</p>
-<p>And here is the PDF output of the same document.</p>
-<iframe src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/Markdown_Section1.3.Rmd.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+<p>And <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/Markdown_Section1.3.pdf" target="_blank" class="btn btn--primary">here</a> is the PDF output of the same document.</p>
