@@ -1,0 +1,133 @@
+---
+title: "My first R Markdown script"
+author: "Your name"
+date: "This document was last modified on `r Sys.Date()`"
+output: pdf_document
+toc: yes
+toc-depth: 4
+---
+
+# 1. Prepare to work
+
+## 1.1 Set the working directory
+
+Refer to Section 1.2 for this, Part 3.1.
+
+## 1.2 Load the libraries
+
+```{r}
+#| warning: false
+#| message: false
+library(dplyr)
+```
+
+## 1.3 Load the data
+
+```{r}
+data <- read.csv("~/Fake/GACTT_RESULTS_ANONYMIZED_v2.csv", header=TRUE)
+```
+
+# 2. Preliminary observations and preparation of the data
+
+## 2.1 Preliminary descriptive statistics
+
+```{r}
+## head(data, 5) ## Code not run because too lengthy
+## str(data) ## Code not run because too lengthy
+## summary(data) ## Code not run because too lengthy
+```
+
+## 2.2 Transformation of the data
+
+### 2.2.1 Change of class
+
+```{r}
+data$What.is.your.age. <- as.factor(data$What.is.your.age.)
+data$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- as.factor(data$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+data$Where.do.you.typically.drink.coffee. <- as.factor(data$Where.do.you.typically.drink.coffee.)
+## summary(data) ## Code not run because too lengthy
+```
+
+```{r}
+levels(data$What.is.your.age.)
+levels(data$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+levels(data$Where.do.you.typically.drink.coffee.)
+```
+
+### 2.2.2 Data selection
+
+```{r}
+data2 <- data[,c("Submission.ID",
+                 "What.is.your.age.",
+                 "How.many.cups.of.coffee.do.you.typically.drink.per.day.",
+                 "Where.do.you.typically.drink.coffee.")] 
+```
+
+```{r}
+data2 <- subset(data2, What.is.your.age. != "")
+data2$What.is.your.age. <- droplevels(data2$What.is.your.age.)
+
+data2 <- subset(data2, How.many.cups.of.coffee.do.you.typically.drink.per.day. != "")
+data2$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- droplevels(data2$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+```
+
+# 3. Summarize and plot the data
+
+## 3.1 Create summary table
+
+```{r}
+data3 <- data2 %>% 
+  group_by(What.is.your.age., How.many.cups.of.coffee.do.you.typically.drink.per.day.) %>% 
+  summarize(Count = n())
+
+data3
+str(data3)
+```
+
+## 3.2 Change the order of the factors
+
+```{r}
+levels(data3$What.is.your.age.)
+data3$What.is.your.age. <- factor(data3$What.is.your.age., levels = c("<18 years old",
+                                                                      "18-24 years old",
+                                                                      "25-34 years old",
+                                                                      "35-44 years old",
+                                                                      "45-54 years old",
+                                                                      "55-64 years old",
+                                                                      ">65 years old"))
+levels(data3$What.is.your.age.)
+
+levels(data3$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+data3$How.many.cups.of.coffee.do.you.typically.drink.per.day. <- factor(data3$How.many.cups.of.coffee.do.you.typically.drink.per.day., levels = c("Less than 1",
+                                                                      "1",
+                                                                      "2",
+                                                                      "3",
+                                                                      "4",
+                                                                      "More than 4"))
+levels(data3$How.many.cups.of.coffee.do.you.typically.drink.per.day.)
+```
+
+## 3.3 Plot the data
+
+```{r}
+plot(x = data3$What.is.your.age., y = data3$Count)
+
+```
+
+```{r}
+plot(x = data3$How.many.cups.of.coffee.do.you.typically.drink.per.day., y = data3$Count)
+```
+
+# 4. Save the data
+
+## 4.1 Save as an R object
+
+```{r}
+save(data3, file = "data.Rdata")
+```
+
+## 4.2 Save as a CSV document
+
+```{r}
+write.csv(data3, "data3.csv", row.names = FALSE)
+```

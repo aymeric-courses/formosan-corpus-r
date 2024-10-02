@@ -22,7 +22,7 @@ sidebar:
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RMarkdown_Setup.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RMarkdown_Setup.png?raw=true"/></a>
 
-<p>Before getting into the file itself, some words must be said concerning the header. At one place, you can see two buttons, "Source" and "Visual". Clicj on "Visual", and you will see many options unfolding on the right.</p>
+<p>Before getting into the file itself, some words must be said concerning the header. At one place, you can see two buttons, "Source" and "Visual". Click on "Visual", and you will see many options unfolding on the right.</p>
 
 <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RMarkdown_Headers.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RMarkdown_Headers.png?raw=true"/></a>
 
@@ -87,7 +87,7 @@ toc-depth: 4 ## Change this value depending on how many layers you wish to displ
 ```
 ---
 title: "My first R Markdown script"
-author: "Aymeric Collart"
+author: "Your name"
 date: "This document was last modified on `r Sys.Date()`"
 output: pdf_document
 toc: yes
@@ -96,13 +96,46 @@ toc-depth: 4
 ```
 
 ### 2.2 Navigating the file: Titles and subtitles
+<p>The titles and subtitles are here to give the overall structure of the document. Please note that they are optional: It is possible to write a whole R Markdown document without any title! But as the codes are more and more lengthy, it becomes messy very easily to the point that it is very difficult to understand what we are doing. In other words, the titles and subtitles are here to clarify everything!</p>
+<p>Adding titles and subtitles is very simple. You just need to click on the button where the header options can be found. For example, if you want to write the title of a main part (let's say, "1. Introduction"), you click on "Header 1", and you write the name of the title. It is the same process for subtitles. Let's say you want a subpart called "1.1 Introduction within the introduction", you just click on "Header 2" and you write what you want for the subtitle.</p>
 
-### 2.3 Navigating the file: Titles and subtitles
+<p class="notice--info">
 
-### 2.4 Writing the content
+<strong>Tip</strong><br>
+I personally prefer when the structure is numbered, this is why I add the number of the sections like "<strong><i>1.</i></strong> Introduction", or "<strong><i>1.1</i></strong> Introduction of the introduction". But this is not obligatory and depends on your style!<br>
 
-#### 2.4.1 Writing the narrative
+</p>
 
-#### 2.4.2 Writing the code
+<p>The titles and subtitles are also very important to <strong>set the table of contents</strong>!</p>
 
-## 3. Save, render and share
+### 2.3 Writing the content
+
+#### 2.3.1 Writing the narrative
+<p>Nothing more simple: You can write directly inside the document. Just do not forget to check that the style is set as "Normal" and not "Header 1", "Header 2", etc. when doing so!<br>
+This is a big difference with R Script. Everything you write in an R Script is considered as a code, unless you use the hashtag signs to tell R that this is a comment. In other words, everything that you write in the document is considered as a comment, so do not hesitate to write as much as you want as long as it makes things clearer for you!</p>
+
+#### 2.3.2 Writing the code
+<p>If what we write inside the document is not considered as a code, then how to add one?<br>
+You Just need to click on "Insert", then "Code Chunk", and finally "R". Normally, a grey code block with appear with {r} at the top line to indicate that this is an R code block. Everything written in this grey block will be considered as R code. You can also add comments inside the block using hashtags as you can do in a typical R Script.<br>
+Sometimes, R will display simple messages and/or warnings at the same time as you run the code. It is possible to "hide" them, you just need to add the following lines below {r}, as below.</p>
+
+```
+{r}
+#| warning: false
+#| message: false
+```
+<p>Your code chunk will look like this:</p>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true"/></a>
+
+<p>Finally, you can run the code chunk without running ALL the document. Can you see the green 'play' logo on the top right of the code chunk? You just need to click on it!</p>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/RCodeBlock_WarningMessage.png?raw=true"/></a>
+
+# 3. Save, render and share
+
+<p>You can save your Markdown document as usual, but this will not give you the output that you want (unless you ticked the "Knit on Save" option). To do so, you need to click on the "Knit" button at the top of it. Since we have already specified in the YAML block that we want a PDF document, there is no need to choose between other options. But you can have a look at it and try other options, such as "Knit to HTML"!</p>
+
+## Markdown and PDF documents of Sections 1.2 and 1.3
+
+<p>Maybe you were playing with your own R Markdown document at the same time as you were following this section, and add the codes of the Section 1.2 in it. In that case, congratulations! You have your very first R Markdown document ready! If not, you can just download the template <a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/Markdown_Section1.3.Rmd" target="_blank" class="btn btn--primary">here</a>.</p>
+<p>And here is the PDF output of the same document.</p>
+<iframe src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/files/Markdown_Section1.3.Rmd.pdf" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
