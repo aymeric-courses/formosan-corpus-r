@@ -14,14 +14,14 @@ The structure of the tutorial can be found on this page.
 
 | Chapter and content | | Link |
 | -------- | ------- | ------- |
-| Chapter 1: Getting started | | |
+| <b>Chapter 1: Getting started</b> | | |
 | &nbsp;&nbsp;&nbsp; Download and install R/RStudio    | | <a href="https://aymeric-courses.github.io/formosan-corpus-r/docs/InstallationR/" target="_blank">link</a> |
 | &nbsp;&nbsp;&nbsp; Presentation of R/RStudio    | | <a href="https://aymeric-courses.github.io/formosan-corpus-r/docs/RStudioInterface/" target="_blank">link</a> |
 | &nbsp;&nbsp;&nbsp; Working with markdown files||<a href="https://aymeric-courses.github.io/formosan-corpus-r/docs/WorkingWithRMarkdown/" target="_blank">link</a>|
-| Chapter 2: Let's get our data |||
+| <b>Chapter 2: Let's get our data</b> |||
 | &nbsp;&nbsp;&nbsp; Understanding where the data are on the Internet    | | <a href="#" target="_blank">link</a> |
 | &nbsp;&nbsp;&nbsp; Scraping the data from the web with R    | | <a href="#" target="_blank">link</a> |
-| Chapter 3: Cleaning and analyzing the data  |||
+| <b>Chapter 3: Cleaning and analyzing the data</b>  |||
 | &nbsp;&nbsp;&nbsp; Preprocess the data: Cleaning and transformations    | | <a href="#" target="_blank">link</a> |
 | &nbsp;&nbsp;&nbsp; Analyzing the data    | | <a href="#" target="_blank">link</a> |
 
