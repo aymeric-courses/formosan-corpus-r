@@ -65,14 +65,14 @@ You will remark that there are pre-filled information, such as the title of the 
 
 <p>You can also add other pieces of information, for instance:</p>
 
-1. <strong>Date:</strong>
+- <strong>Date:</strong>
 <p>You have more options, such as defining the format of the date, and maybe more interestingly, create a variable such that you do not have to change the date anytime you are saving the document. In other words, you may want to have a line specifying something like "This document was last modified on 'Year-Month-Day'". Just write as follows:</p>
 ```
 date: "This document was last modified on `r Sys.Date()`"
 ```
 <p>The code `r Sys.Date()` will look at the date of the system of your computer.</p>
 
-3. <strong>Table of contents:</strong>
+- <strong>Table of contents:</strong>
 <p>The addition of titles in the document is here to help when navigating it. You can also add a table of contents such that it is even easier to navigate. You can also specify how many layers you want to display in the table of contents.</p>
 
 ```
@@ -80,7 +80,7 @@ toc: true
 toc-depth: 4 ## Change this value depending on how many layers you wish to display
 ```
 
-4. <strong>Format:</strong>
+- <strong>Format:</strong>
 <p>For now, the output format is "html". Just replace with other values according to the output format you want (for example: "pdf_document").</p>
 
 <p>In the end, the YAML block should look like this:</p>
