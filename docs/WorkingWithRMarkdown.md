@@ -47,9 +47,9 @@ sidebar:
 
 <p>We will take the codes from <a href="https://aymeric-courses.github.io/formosan-corpus-r/docs/RStudioInterface/#32-your-first-script-some-syntax-and-vocabulary-of-r" target="_blank">Section 1.2</a> as an example to create our very first R Markdown document.</p>
 
-### 2.2 Configuring the file: The YAML block
+### 2.1 Configuring the file: The YAML block
 
-#### 2.2.1 Basic features of the YAML block
+#### 2.1.1 Basic features of the YAML block
 
 <p>Let's start with configuring the file: This corresponds to the first lines, or the header, of the script that you have just created. This is called the YAML part. It looks like this so far:</p>
 
@@ -61,26 +61,16 @@ You will remark that there are pre-filled information, such as the title of the 
 2. <strong>Author:</strong> Change to you name
 3. <strong>Date:</strong> Change to the date you wish, or even delete this line if you do not wish to add a date
 
-#### 2.2.2 More advanced features of the YAML block
+#### 2.1.2 More advanced features of the YAML block
 
 <p>You can also add other pieces of information, for instance:</p>
 
-1. <strong>Author information</strong>
-<p>You can additional information, such as your email address, your ORCID number, your affiliations, etc. To do so, you just need to write as follows (just change according to your own information):</p>
-```
-author:
-  name: Aymeric Collart
-  orcid: 0000-0002-8902-0758
-  email: aymeric.collart@gmail.com
-  affiliations: Institute of Linguistics, Academia Sinica
-```
-
-2. <strong>Date:</strong>
+1. <strong>Date:</strong>
 <p>You have more options, such as defining the format of the date, and maybe more interestingly, create a variable such that you do not have to change the date anytime you are saving the document. In other words, you may want to have a line specifying something like "This document was last modified on 'Year-Month-Day'". Just write as follows:</p>
 ```
-date: last-modified
-date-format: "[This document was last modified on] YYYY-MM-DD"
+date: "This document was last modified on `r Sys.Date()`"
 ```
+<p>The code `r Sys.Date()` will look at the date of the system of your computer.</p>
 
 3. <strong>Table of contents:</strong>
 <p>The addition of titles in the document is here to help when navigating it. You can also add a table of contents such that it is even easier to navigate. You can also specify how many layers you want to display in the table of contents.</p>
@@ -91,16 +81,28 @@ toc-depth: 4 ## Change this value depending on how many layers you wish to displ
 ```
 
 4. <strong>Format:</strong>
-<p>For now, the output format is "html". Just replace with other values according to the output format you want (for example: "pdf_document").
+<p>For now, the output format is "html". Just replace with other values according to the output format you want (for example: "pdf_document").</p>
+
+<p>In the end, the YAML block should look like this:</p>
+```
+---
+title: "My first R Markdown script"
+author: "Aymeric Collart"
+date: "This document was last modified on `r Sys.Date()`"
+output: pdf_document
+toc: yes
+toc-depth: 4
+---
+```
+
+### 2.2 Navigating the file: Titles and subtitles
 
 ### 2.3 Navigating the file: Titles and subtitles
 
-### 2.4 Navigating the file: Titles and subtitles
+### 2.4 Writing the content
 
-### 2.5 Writing the content
+#### 2.4.1 Writing the narrative
 
-#### Writing the narrative
-
-#### Writing the code
+#### 2.4.2 Writing the code
 
 ## 3. Save, render and share
