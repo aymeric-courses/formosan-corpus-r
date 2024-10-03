@@ -12,7 +12,7 @@ sidebar:
 
 <p>The workflow of a typical corpus-based study is generally as in the image below.</p>
 
-<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/WorkflowTutorial.svg?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/WorkflowTutorial.svg?raw=true"/></a>
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/WorkflowTutorial.png?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/WorkflowTutorial.png?raw=true"/></a>
 
 <p>The sections and their links can be found in the Table of Contents on the left in addition to the table below.</p>
 
