@@ -8,9 +8,13 @@ sidebar:
   nav: docs
 ---
 
-## Structure of the tutorial
+## Structure and workflow of the tutorial
 
-The structure of the tutorial can be found on this page.
+<p>The workflow of a typical corpus-based study is generally as in the image below.</p>
+
+<a href="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/WorkflowTutorial.svg?raw=true" class="image-popup" target="_blank"><img src="https://github.com/aymeric-courses/formosan-corpus-r/blob/master/assets/images/WorkflowTutorial.svg?raw=true"/></a>
+
+<p>The sections and their links can be found in the Table of Contents on the left in addition to the table below.</p>
 
 | Chapter and content | | Link |
 | -------- | ------- | ------- |
@@ -24,6 +28,8 @@ The structure of the tutorial can be found on this page.
 | <b>Chapter 3: Cleaning and analyzing the data</b>  |||
 | &nbsp;&nbsp;&nbsp; Preprocess the data: Cleaning and transformations    | | <a href="#" target="_blank">link</a> |
 | &nbsp;&nbsp;&nbsp; Analyzing the data    | | <a href="#" target="_blank">link</a> |
+
+<p>The picture and table above show what this tutorial will cover. In other words, this tutorial will not discuss the fundamental concepts of corpus linguistics, how to ask a research question and how to motivate it. If you are interested in it, you can read the book published by Anatol Stefanowitsch in 2020, available for free <a href="https://langsci-press.org/catalog/book/148" target="_blank" class="btn btn--primary">here</a>. This tutorial will also not discuss advanced statistical methods in corpus linguistics, such as classification analyses or vector space representations.</p>
 
 ## How to get through the exercises
 
